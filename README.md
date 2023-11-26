@@ -14,22 +14,16 @@
 
 *All words in the text file need to be tokenized because logically a concordance does not contain non- alphabetical characters. Since punctuation and all non-alphabetic characters are to be ignored, all words containing the same are split to form their own words. This process is called tokenizing of a string. For tokenization, we can keep reading characters from the input text file and append it to a word until a non-alphabetic character is encountered. When a non-alphabetic character is encountered, the word formed up till that point becomes one token and is sent for further evaluation. This way, the non-alphabetic character is not considered and hence removed from the concordance evaluation. This process is repeated till all characters from the file are read. Not only does this tokenize the words of the input text file, it also removes all non-alphabetical characters.*  
 
-*After that, to check the frequency of each word, each word that is formed is to be compared with all* 
-
-*the words that were formed before it. In case a match is found, the frequency is incremented by 1. In* 
-
-*case a match is not found, the word is added to the concordance database and its frequency is set to 1.*  
-
-*Thereafter, the words database is to be sorted in alphabetical order with its corresponding frequencies. This can be done by comparing two consecutive words in the database. If the first word is lexicographically bigger than the second one, the two are to be swapped and their corresponding frequencies are also supposed to be swapped. This will keep pushing the largest words towards the end of the database such that at the end of the iteration, the database is sorted alphabetically.* 
-
-*Ultimately, the entire concordance data is outputted to another text file and is displayed on the output screen.* 
+*After that, to check the frequency of each word, each word that is formed is to be compared with all the words that were formed before it. In case a match is found, the frequency is incremented by 1. In case a match is not found, the word is added to the concordance database and its frequency is set to 1. Thereafter, the words database is to be sorted in alphabetical order with its corresponding frequencies. This can be done by comparing two consecutive words in the database. If the first word is lexicographically bigger than the second one, the two are to be swapped and their corresponding frequencies are also supposed to be swapped. This will keep pushing the largest words towards the end of the database such that at the end of the iteration, the database is sorted alphabetically. Ultimately, the entire concordance data is outputted to another text file and is displayed on the output screen.* 
 
 **Input/Output Description:** 
 
-*The inputs are: Input Text File The outputs are:*  
+*The inputs are: Input Text File*
+
+*The outputs are:*  
 
 1. *Concordance Text File*  
-1. *Concordance data on the output screen (i.e., alphabetic listing of unique words in the input text file and their corresponding frequencies)* 
+2. *Concordance data on the output screen (i.e., alphabetic listing of unique words in the input text file and their corresponding frequencies)* 
 
 *Technically, the input text file can be any kind of text file since the software is equipped to deal with all kinds of characters. For logical reasons, the input text file is mostly a file containing text that needs to be evaluated for intelligent information retrieval.*  
 
@@ -39,13 +33,8 @@
 
 Alternatively, the inputs and outputs could be represented using a black-box diagram:
 
-*Concordance Text File![](Aspose.Words.b21d91bd-de27-46a2-8b3e-c40fbf468362.003.png)![](Aspose.Words.b21d91bd-de27-46a2-8b3e-c40fbf468362.004.png)*
+*Concordance Text File![](Aspose.Words.b21d91bd-de27-46a2-8b3e-c40fbf468362.003.png)
 
-*Input Text File*
-
-*Concordance Data(list of unique words and* 
-
-*Output Text File  corresponding frequency) ![](Aspose.Words.b21d91bd-de27-46a2-8b3e-c40fbf468362.005.png)name*
 
 **Hand-solved problems** 
 
@@ -57,9 +46,9 @@ Note: An online concordance generator [(https://www.lextutor.ca/conc/text/)](htt
 
 *Input text file name: “paragraph.txt”* 
 
-As Michael Harvey writes, paragraphs are “in essence—a form of punctuation, and like other forms of punctuation they are meant to make written material easy to read[.”**\[1\]** ](https://courses.lumenlearning.com/waymaker-level3-english/chapter/text-the-perfect-paragraph/#footnote-542-1)Effective paragraphs are the fundamental units of academic writing; consequently, the thoughtful, multifaceted arguments that your professors expect depend on them. Without good paragraphs, you simply cannot clearly convey sequential points and their relationships to one another.  
-
-Many novice writers tend to make a sharp distinction between content and style, thinking that a paper can be strong in one and weak in the other, but focusing on organization shows how content and style converge in deliberative academic writing. Your professors will view even the most elegant prose as rambling and tedious if there isn’t a careful, coherent argument to give the text meaning. Paragraphs are the “stuff ” of academic writing and, thus, worth our attention here. 
+  As Michael Harvey writes, paragraphs are “in essence—a form of punctuation, and like other forms of punctuation they are meant to make written material easy to read[.”**\[1\]** ](https://courses.lumenlearning.com/waymaker-level3-english/chapter/text-the-perfect-paragraph/#footnote-542-1)Effective paragraphs are the fundamental units of academic writing; consequently, the thoughtful, multifaceted arguments that your professors expect depend on them. Without good paragraphs, you simply cannot clearly convey sequential points and their relationships to one another.  
+  
+  Many novice writers tend to make a sharp distinction between content and style, thinking that a paper can be strong in one and weak in the other, but focusing on organization shows how content and style converge in deliberative academic writing. Your professors will view even the most elegant prose as rambling and tedious if there isn’t a careful, coherent argument to give the text meaning. Paragraphs are the “stuff ” of academic writing and, thus, worth our attention here. 
 
 *Output text file name: “concord.txt”* 
 
