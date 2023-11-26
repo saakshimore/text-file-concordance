@@ -1,15 +1,3 @@
-//***********************************************************//
-//** Author:Saakshi More **//
-//** University ID: N13275625 **//
-//** Date Created: November 10, 2021 **//
-//** Assignment 2: Concordance of a File **//
-//** UH-1000 Computer Programming for Engineers, NYUAD **//
-//** Problem: **//
-//** a program that processes a text fileand produces a concordance : 
-// an alphabetical listing of the words in the fileand the number of 
-// times each word appears(frequency)**//
-//***********************************************************//
-
 #include <iostream>
 #include <string>
 #include <fstream>
