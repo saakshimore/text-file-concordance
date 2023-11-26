@@ -1,8 +1,8 @@
-﻿**Problem Identification and Statement** 
+﻿***Problem Identification and Statement***
 
 *The objective is to develop a software that can process a text file and produce a concordance: an alphabetic listing of the words in the file and the frequency of each word. Punctuation and other non- alphabetic symbols (including numbers) should be ignored. The concordance (list of unique words along with their frequency of occurrence in the file) must be stored to an output file and displayed on the output screen*
 
-**Gathering  of  Information  and  Input/Output Description**
+***Gathering  of  Information  and  Input/Output Description***
 
 **Relevant information:**  
 
@@ -33,10 +33,10 @@
 
 Alternatively, the inputs and outputs could be represented using a black-box diagram:
 
-*Concordance Text File![](Aspose.Words.b21d91bd-de27-46a2-8b3e-c40fbf468362.003.png)
+![](Aspose.Words.b21d91bd-de27-46a2-8b3e-c40fbf468362.003.png)
 
 
-**Hand-solved problems** 
+***Hand-solved problems***
 
 Note: An online concordance generator [(https://www.lextutor.ca/conc/text/)](https://www.lextutor.ca/conc/text/) has been used to find the concordance of the given input texts for step 3. However, the generator considers numbers  while  processing  the  text  and  ignores  tokens  that  are  not  part  of  the  English dictionary.  In  our  software,  we  ignore  numbers  and  we  consider  all  alphabetic  tokens, whether or not it is found in the English dictionary. Hence, the expected outcome can be different from what is seen. However, the differences expected have been described for each test case. Moreover, our output will entirely be in lower-case.  
 
@@ -68,6 +68,11 @@ The key differences between the above output and the software output are:
 - Hence, the software should display 100 unique words 
 - The program must print a confirmation message on the output screen once the data is stored in the file. 
 
+
+
+**Test case 2: Valid File** 
+
+**Input:** 
 *Input text file name: “drivers.txt”* 
 
 Driving\_&\_Cell\_Phones 
@@ -91,6 +96,11 @@ The key differences between the above output and the software output are:
 - The software should display “u” and “s” as 2 additional tokens after tokenizing “U.S” (the generator reads it as one phrase: “US”) 
 - Hence, the software should display 192 unique words  
 - The program must print a confirmation message on the output screen once the data is stored in the file. 
+
+
+**Test case 3: Valid File** 
+
+**Input:** 
 
 *Input text file name: “technology.txt”* 
 
@@ -127,6 +137,8 @@ The key differences between the above output and the software output are:
 
 **Expected Outcome:** Error opening file** 
 
+
+
 **Test case 5: Empty text file**
 
 **Input:**  
@@ -138,6 +150,8 @@ The key differences between the above output and the software output are:
 **Expected Outcome:** 
 
 Data stored in Concordance file! Concordance of a file:
+
+
 
 **Test case 6: Only Punctuation text file**
 
@@ -189,7 +203,6 @@ which is in agreement with the test case expected output.
 
 which is in agreement with the test case expected output.
 
-Assignment  | Computer Engineering Case Study | Saakshi More   
 **Test Case 4:**  
 
 ![](Aspose.Words.b21d91bd-de27-46a2-8b3e-c40fbf468362.032.png)
@@ -225,4 +238,3 @@ en.wikipedia.org/wiki/Concordance\_(publishing).
 Yavuz, Fatih. “The Use of Concordancing Programs in ELT.” *Procedia - Social and Behavioral* 
 
 *Sciences*, vol. 116, 21 Feb. 2014, pp. 2312–2315., doi:10.1016/j.sbspro.2014.01.565.  
-Assignment 3 | Computer Engineering Case Study | Saakshi More   31
